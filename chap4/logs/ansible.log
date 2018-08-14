@@ -1,0 +1,24 @@
+2018-08-14 02:35:26,198 p=3025 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-14 02:35:26,198 p=3025 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-14 02:35:27,094 p=3025 u=root |  localhost | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-08-14 02:35:27,294 p=3025 u=root |  db | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-08-14 02:35:27,297 p=3025 u=root |  app2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-08-14 02:35:28,242 p=3025 u=root |  app1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-08-14 02:35:28,250 p=3025 u=root |  lb | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
