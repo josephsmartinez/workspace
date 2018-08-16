@@ -1,0 +1,382 @@
+2018-08-14 02:21:42,583 p=2629 u=root |   [WARNING]:  * Failed to parse /workspace/chap4/environments/prod with yaml
+plugin: Syntax Error while loading YAML.   The error appears to have been in
+'/workspace/chap4/environments/prod': line 5, column 1, but may be elsewhere in
+the file depending on the exact syntax problem.  The offending line appears to
+be:  [local] localhost ansible_connection =local ^ here  exception type: <class
+'yaml.parser.ParserError'> exception: did not find expected <document start>
+in "<unicode string>", line 5, column 1
+
+2018-08-14 02:21:42,583 p=2629 u=root |   [WARNING]:  * Failed to parse /workspace/chap4/environments/prod with ini
+plugin: /workspace/chap4/environments/prod:5: Expected key=value host variable
+assignment, got: ansible_connection
+
+2018-08-14 02:21:42,584 p=2629 u=root |   [WARNING]: Unable to parse /workspace/chap4/environments/prod as an inventory
+source
+
+2018-08-14 02:21:42,585 p=2629 u=root |   [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2018-08-14 02:21:42,587 p=2629 u=root |   [WARNING]: Could not match supplied host pattern, ignoring: all
+
+2018-08-14 02:21:42,587 p=2629 u=root |   [WARNING]: provided hosts list is empty, only localhost is available
+
+2018-08-14 02:21:42,587 p=2629 u=root |   [WARNING]: No hosts matched, nothing to do
+
+2018-08-14 02:21:53,923 p=2639 u=root |   [WARNING]:  * Failed to parse /workspace/chap4/environments/prod with yaml
+plugin: Syntax Error while loading YAML.   The error appears to have been in
+'/workspace/chap4/environments/prod': line 5, column 1, but may be elsewhere in
+the file depending on the exact syntax problem.  The offending line appears to
+be:  [local] localhost ansible_connection =local ^ here  exception type: <class
+'yaml.parser.ParserError'> exception: did not find expected <document start>
+in "<unicode string>", line 5, column 1
+
+2018-08-14 02:21:53,923 p=2639 u=root |   [WARNING]:  * Failed to parse /workspace/chap4/environments/prod with ini
+plugin: /workspace/chap4/environments/prod:5: Expected key=value host variable
+assignment, got: ansible_connection
+
+2018-08-14 02:21:53,924 p=2639 u=root |   [WARNING]: Unable to parse /workspace/chap4/environments/prod as an inventory
+source
+
+2018-08-14 02:21:53,925 p=2639 u=root |   [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2018-08-14 02:21:53,926 p=2639 u=root |   [WARNING]: Could not match supplied host pattern, ignoring: all
+
+2018-08-14 02:21:53,926 p=2639 u=root |   [WARNING]: provided hosts list is empty, only localhost is available
+
+2018-08-14 02:21:53,926 p=2639 u=root |   [WARNING]: No hosts matched, nothing to do
+
+2018-08-14 02:23:02,216 p=2711 u=root |   [WARNING]:  * Failed to parse /workspace/chap4/environments/prod with yaml
+plugin: Syntax Error while loading YAML.   The error appears to have been in
+'/workspace/chap4/environments/prod': line 2, column 1, but may be elsewhere in
+the file depending on the exact syntax problem.  The offending line appears to
+be:  [local] localhost ansible_connection =local ^ here  exception type: <class
+'yaml.parser.ParserError'> exception: did not find expected <document start>
+in "<unicode string>", line 2, column 1
+
+2018-08-14 02:23:02,218 p=2711 u=root |   [WARNING]:  * Failed to parse /workspace/chap4/environments/prod with ini
+plugin: /workspace/chap4/environments/prod:2: Expected key=value host variable
+assignment, got: ansible_connection
+
+2018-08-14 02:23:02,218 p=2711 u=root |   [WARNING]: Unable to parse /workspace/chap4/environments/prod as an inventory
+source
+
+2018-08-14 02:23:02,218 p=2711 u=root |   [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2018-08-14 02:23:02,221 p=2711 u=root |   [WARNING]: Could not match supplied host pattern, ignoring: all
+
+2018-08-14 02:23:02,222 p=2711 u=root |   [WARNING]: provided hosts list is empty, only localhost is available
+
+2018-08-14 02:23:02,222 p=2711 u=root |   [WARNING]: No hosts matched, nothing to do
+
+2018-08-14 02:24:45,360 p=2785 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-14 02:24:45,361 p=2785 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-14 02:24:46,146 p=2785 u=root |  localhost | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-08-14 02:24:46,311 p=2785 u=root |  lb | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-08-14 02:24:47,622 p=2785 u=root |  app1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-08-14 02:24:47,625 p=2785 u=root |  app2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-08-14 02:24:47,626 p=2785 u=root |  db | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2018-08-16 01:41:34,307 p=5387 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-16 01:41:34,309 p=5387 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-16 01:41:37,901 p=5387 u=root |  app2 | SUCCESS | rc=0 >>
+CentOS release 6.8 (Final)
+Kernel \r on an \m
+
+2018-08-16 01:41:37,914 p=5387 u=root |  lb | SUCCESS | rc=0 >>
+CentOS release 6.8 (Final)
+Kernel \r on an \m
+
+2018-08-16 01:41:37,917 p=5387 u=root |  app1 | SUCCESS | rc=0 >>
+CentOS release 6.8 (Final)
+Kernel \r on an \m
+
+2018-08-16 01:41:37,920 p=5387 u=root |  db | SUCCESS | rc=0 >>
+CentOS release 6.8 (Final)
+Kernel \r on an \m
+
+2018-08-16 01:41:50,842 p=5444 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-16 01:41:50,844 p=5444 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-16 01:41:53,331 p=5444 u=root |  app2 | SUCCESS | rc=0 >>
+CentOS release 6.8 (Final)
+Kernel \r on an \m
+
+2018-08-16 01:41:53,342 p=5444 u=root |  db | SUCCESS | rc=0 >>
+CentOS release 6.8 (Final)
+Kernel \r on an \m
+
+2018-08-16 01:41:53,344 p=5444 u=root |  lb | SUCCESS | rc=0 >>
+CentOS release 6.8 (Final)
+Kernel \r on an \m
+
+2018-08-16 01:41:53,348 p=5444 u=root |  app1 | SUCCESS | rc=0 >>
+CentOS release 6.8 (Final)
+Kernel \r on an \m
+
+2018-08-16 02:20:57,160 p=5811 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-16 02:20:57,162 p=5811 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-16 02:20:57,173 p=5811 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/workspace/chap5/systems.yml': line 13, column 17, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+        - name: remove user dojo id present
+            user: >
+                ^ here
+
+exception type: <class 'yaml.scanner.ScannerError'>
+exception: mapping values are not allowed in this context
+  in "<unicode string>", line 13, column 17
+2018-08-16 02:21:31,847 p=5819 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-16 02:21:31,850 p=5819 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-16 02:21:31,857 p=5819 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/workspace/chap5/systems.yml': line 13, column 17, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+        - name: remove user dojo id present
+            user: >
+                ^ here
+
+exception type: <class 'yaml.scanner.ScannerError'>
+exception: mapping values are not allowed in this context
+  in "<unicode string>", line 13, column 17
+2018-08-16 02:23:24,135 p=5830 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-16 02:23:24,135 p=5830 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-16 02:23:24,144 p=5830 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/workspace/chap5/systems.yml': line 7, column 17, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+        - name: create admin
+            user:                 # Module
+                ^ here
+
+exception type: <class 'yaml.scanner.ScannerError'>
+exception: mapping values are not allowed in this context
+  in "<unicode string>", line 7, column 17
+2018-08-16 02:23:56,287 p=5863 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-16 02:23:56,289 p=5863 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-16 02:23:56,298 p=5863 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/workspace/chap5/systems.yml': line 18, column 16, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+        - name: install tree
+            yum: |
+               ^ here
+
+exception type: <class 'yaml.scanner.ScannerError'>
+exception: mapping values are not allowed in this context
+  in "<unicode string>", line 18, column 16
+2018-08-16 02:24:15,502 p=5881 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-16 02:24:15,503 p=5881 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-16 02:24:15,514 p=5881 u=root |  ERROR! 'task' is not a valid attribute for a Play
+
+The error appears to have been in '/workspace/chap5/systems.yml': line 2, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+    - name: base systems configuration for linux servers
+      ^ here
+
+2018-08-16 02:25:15,460 p=5920 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-16 02:25:15,462 p=5920 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-16 02:25:15,543 p=5920 u=root |   [WARNING]: Could not match supplied host pattern, ignoring: pord
+
+2018-08-16 02:25:15,545 p=5920 u=root |  playbook: systems.yml
+2018-08-16 02:25:41,694 p=5954 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-16 02:25:41,695 p=5954 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-16 02:25:41,774 p=5954 u=root |  playbook: systems.yml
+2018-08-16 02:25:53,691 p=5967 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-16 02:25:53,691 p=5967 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-16 02:25:53,774 p=5967 u=root |  playbook: systems.yml
+2018-08-16 02:25:53,775 p=5967 u=root |    play #1 (prod): base systems configuration for linux servers	TAGS: []
+    pattern: [u'prod']
+    hosts (4):
+      db
+      lb
+      app2
+      app1
+2018-08-16 02:27:17,940 p=6008 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-16 02:27:17,940 p=6008 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-16 02:27:18,034 p=6008 u=root |   [WARNING]: Could not match supplied host pattern, ignoring: prod[!db:app]
+
+2018-08-16 02:27:18,036 p=6008 u=root |  playbook: systems.yml
+2018-08-16 02:27:18,037 p=6008 u=root |    play #1 (prod[!db:app]): base systems configuration for linux servers	TAGS: []
+    pattern: [u'prod[!db:app]']
+    hosts (0):
+2018-08-16 02:28:01,414 p=6035 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-16 02:28:01,415 p=6035 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-16 02:28:01,518 p=6035 u=root |   [WARNING]: Could not match supplied host pattern, ignoring: prod[!db:app]
+
+2018-08-16 02:28:01,520 p=6035 u=root |  playbook: systems.yml
+2018-08-16 02:28:01,521 p=6035 u=root |    play #1 (prod[!db:app]): base systems configuration for linux servers	TAGS: []
+    pattern: [u'prod[!db:app]']
+    hosts (0):
+2018-08-16 02:28:56,646 p=6070 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-16 02:28:56,648 p=6070 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-16 02:28:56,731 p=6070 u=root |   [WARNING]: Could not match supplied host pattern, ignoring: prod!db
+
+2018-08-16 02:28:56,733 p=6070 u=root |  playbook: systems.yml
+2018-08-16 02:28:56,733 p=6070 u=root |    play #1 (prod!db:app1): base systems configuration for linux servers	TAGS: []
+    pattern: [u'prod!db:app1']
+    hosts (1):
+      app1
+2018-08-16 02:29:26,183 p=6090 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-16 02:29:26,184 p=6090 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-16 02:29:26,276 p=6090 u=root |  playbook: systems.yml
+2018-08-16 02:29:26,278 p=6090 u=root |    play #1 (prod:!db:app1): base systems configuration for linux servers	TAGS: []
+    pattern: [u'prod:!db:app1']
+    hosts (3):
+      lb
+      app2
+      app1
+2018-08-16 02:29:47,715 p=6117 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-16 02:29:47,717 p=6117 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-16 02:29:47,817 p=6117 u=root |  playbook: systems.yml
+2018-08-16 02:29:47,817 p=6117 u=root |    play #1 (prod:!db:!app1): base systems configuration for linux servers	TAGS: []
+    pattern: [u'prod:!db:!app1']
+    hosts (2):
+      lb
+      app2
+2018-08-16 02:30:07,397 p=6137 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-16 02:30:07,398 p=6137 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-16 02:30:07,494 p=6137 u=root |  playbook: systems.yml
+2018-08-16 02:30:07,497 p=6137 u=root |    play #1 (prod): base systems configuration for linux servers	TAGS: []
+    pattern: [u'prod']
+    hosts (4):
+      db
+      lb
+      app2
+      app1
+2018-08-16 02:35:23,921 p=6158 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-16 02:35:23,923 p=6158 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-16 02:35:24,086 p=6158 u=root |  PLAY [base systems configuration for linux servers] *********************************
+2018-08-16 02:35:24,101 p=6158 u=root |  TASK [Gathering Facts] **************************************************************
+2018-08-16 02:35:43,255 p=6158 u=root |  ok: [db]
+2018-08-16 02:35:43,277 p=6158 u=root |  ok: [app2]
+2018-08-16 02:35:43,289 p=6158 u=root |  ok: [app1]
+2018-08-16 02:35:43,313 p=6158 u=root |  ok: [lb]
+2018-08-16 02:35:43,319 p=6158 u=root |  TASK [create admin] *****************************************************************
+2018-08-16 02:35:45,969 p=6158 u=root |  changed: [app2]
+2018-08-16 02:35:45,973 p=6158 u=root |  changed: [db]
+2018-08-16 02:35:45,978 p=6158 u=root |  changed: [lb]
+2018-08-16 02:35:45,981 p=6158 u=root |  changed: [app1]
+2018-08-16 02:35:45,988 p=6158 u=root |  TASK [remove user dojo id present] **************************************************
+2018-08-16 02:35:46,997 p=6158 u=root |  ok: [lb]
+2018-08-16 02:35:47,059 p=6158 u=root |  ok: [app1]
+2018-08-16 02:35:47,115 p=6158 u=root |  ok: [app2]
+2018-08-16 02:35:47,128 p=6158 u=root |  ok: [db]
+2018-08-16 02:35:47,137 p=6158 u=root |  TASK [install tree] *****************************************************************
+2018-08-16 02:35:56,257 p=6158 u=root |  changed: [app2]
+2018-08-16 02:35:56,779 p=6158 u=root |  changed: [db]
+2018-08-16 02:35:56,811 p=6158 u=root |  changed: [app1]
+2018-08-16 02:35:56,825 p=6158 u=root |  changed: [lb]
+2018-08-16 02:35:56,833 p=6158 u=root |  TASK [install ntp] ******************************************************************
+2018-08-16 02:36:10,055 p=6158 u=root |  changed: [app1]
+2018-08-16 02:36:10,074 p=6158 u=root |  changed: [lb]
+2018-08-16 02:36:10,089 p=6158 u=root |  changed: [app2]
+2018-08-16 02:36:10,094 p=6158 u=root |  changed: [db]
+2018-08-16 02:36:10,098 p=6158 u=root |  PLAY RECAP **************************************************************************
+2018-08-16 02:36:10,099 p=6158 u=root |  app1                       : ok=5    changed=3    unreachable=0    failed=0   
+2018-08-16 02:36:10,099 p=6158 u=root |  app2                       : ok=5    changed=3    unreachable=0    failed=0   
+2018-08-16 02:36:10,099 p=6158 u=root |  db                         : ok=5    changed=3    unreachable=0    failed=0   
+2018-08-16 02:36:10,099 p=6158 u=root |  lb                         : ok=5    changed=3    unreachable=0    failed=0   
+2018-08-16 02:36:28,023 p=6340 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-16 02:36:28,025 p=6340 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-16 02:36:28,191 p=6340 u=root |  PLAY [base systems configuration for linux servers] *********************************
+2018-08-16 02:36:28,203 p=6340 u=root |  TASK [Gathering Facts] **************************************************************
+2018-08-16 02:36:46,179 p=6340 u=root |  ok: [app1]
+2018-08-16 02:36:46,191 p=6340 u=root |  ok: [app2]
+2018-08-16 02:36:46,201 p=6340 u=root |  ok: [db]
+2018-08-16 02:36:46,220 p=6340 u=root |  ok: [lb]
+2018-08-16 02:36:46,229 p=6340 u=root |  TASK [create admin] *****************************************************************
+2018-08-16 02:36:48,723 p=6340 u=root |  ok: [app2]
+2018-08-16 02:36:48,741 p=6340 u=root |  ok: [db]
+2018-08-16 02:36:48,748 p=6340 u=root |  ok: [app1]
+2018-08-16 02:36:48,753 p=6340 u=root |  ok: [lb]
+2018-08-16 02:36:48,762 p=6340 u=root |  TASK [remove user dojo id present] **************************************************
+2018-08-16 02:36:49,754 p=6340 u=root |  ok: [lb]
+2018-08-16 02:36:49,830 p=6340 u=root |  ok: [app1]
+2018-08-16 02:36:49,898 p=6340 u=root |  ok: [app2]
+2018-08-16 02:36:49,906 p=6340 u=root |  ok: [db]
+2018-08-16 02:36:49,914 p=6340 u=root |  TASK [install tree] *****************************************************************
+2018-08-16 02:36:51,846 p=6340 u=root |  ok: [app2]
+2018-08-16 02:36:51,876 p=6340 u=root |  ok: [app1]
+2018-08-16 02:36:51,885 p=6340 u=root |  ok: [db]
+2018-08-16 02:36:51,889 p=6340 u=root |  ok: [lb]
+2018-08-16 02:36:51,895 p=6340 u=root |  TASK [install ntp] ******************************************************************
+2018-08-16 02:36:53,551 p=6340 u=root |  ok: [lb]
+2018-08-16 02:36:53,635 p=6340 u=root |  ok: [app1]
+2018-08-16 02:36:53,681 p=6340 u=root |  ok: [app2]
+2018-08-16 02:36:53,702 p=6340 u=root |  ok: [db]
+2018-08-16 02:36:53,705 p=6340 u=root |  PLAY RECAP **************************************************************************
+2018-08-16 02:36:53,705 p=6340 u=root |  app1                       : ok=5    changed=0    unreachable=0    failed=0   
+2018-08-16 02:36:53,706 p=6340 u=root |  app2                       : ok=5    changed=0    unreachable=0    failed=0   
+2018-08-16 02:36:53,706 p=6340 u=root |  db                         : ok=5    changed=0    unreachable=0    failed=0   
+2018-08-16 02:36:53,706 p=6340 u=root |  lb                         : ok=5    changed=0    unreachable=0    failed=0   

@@ -1,0 +1,26 @@
+---
+    - name: base systems configuration for linux servers
+      hosts: prod
+      become: true
+      tasks:
+      
+        - name: create admin 
+          user:                 # Module 
+            name: admin 
+            state: present
+            uid: 5001
+            
+        - name: remove user dojo id present
+          user: >
+            name=dojo
+            state=absent
+        
+        - name: install tree
+          yum: | 
+            name=tree
+            state=present
+        
+        - name: install ntp
+          yum: 
+            name: ntp
+            state: installed
