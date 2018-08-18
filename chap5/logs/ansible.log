@@ -380,3 +380,361 @@ The offending line appears to be:
 2018-08-16 02:36:53,706 p=6340 u=root |  app2                       : ok=5    changed=0    unreachable=0    failed=0   
 2018-08-16 02:36:53,706 p=6340 u=root |  db                         : ok=5    changed=0    unreachable=0    failed=0   
 2018-08-16 02:36:53,706 p=6340 u=root |  lb                         : ok=5    changed=0    unreachable=0    failed=0   
+2018-08-16 03:31:55,088 p=7170 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-16 03:31:55,091 p=7170 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-16 03:31:55,252 p=7170 u=root |  PLAY [base systems configuration for linux servers] *********************************
+2018-08-16 03:31:55,264 p=7170 u=root |  TASK [Gathering Facts] **************************************************************
+2018-08-16 03:32:14,371 p=7170 u=root |  ok: [app2]
+2018-08-16 03:32:14,460 p=7170 u=root |  ok: [db]
+2018-08-16 03:32:14,476 p=7170 u=root |  ok: [app1]
+2018-08-16 03:32:14,482 p=7170 u=root |  ok: [lb]
+2018-08-16 03:32:14,489 p=7170 u=root |  TASK [create admin] *****************************************************************
+2018-08-16 03:32:17,047 p=7170 u=root |  ok: [app2]
+2018-08-16 03:32:17,100 p=7170 u=root |  ok: [db]
+2018-08-16 03:32:17,107 p=7170 u=root |  ok: [app1]
+2018-08-16 03:32:17,111 p=7170 u=root |  ok: [lb]
+2018-08-16 03:32:17,119 p=7170 u=root |  TASK [remove user dojo id present] **************************************************
+2018-08-16 03:32:18,227 p=7170 u=root |  ok: [lb]
+2018-08-16 03:32:18,275 p=7170 u=root |  ok: [app1]
+2018-08-16 03:32:18,331 p=7170 u=root |  ok: [app2]
+2018-08-16 03:32:18,351 p=7170 u=root |  ok: [db]
+2018-08-16 03:32:18,360 p=7170 u=root |  TASK [install tree] *****************************************************************
+2018-08-16 03:32:20,449 p=7170 u=root |  ok: [db]
+2018-08-16 03:32:20,462 p=7170 u=root |  ok: [app1]
+2018-08-16 03:32:20,468 p=7170 u=root |  ok: [lb]
+2018-08-16 03:32:20,472 p=7170 u=root |  ok: [app2]
+2018-08-16 03:32:20,480 p=7170 u=root |  TASK [install ntp] ******************************************************************
+2018-08-16 03:32:22,255 p=7170 u=root |  ok: [lb]
+2018-08-16 03:32:22,319 p=7170 u=root |  ok: [app1]
+2018-08-16 03:32:22,375 p=7170 u=root |  ok: [app2]
+2018-08-16 03:32:22,389 p=7170 u=root |  ok: [db]
+2018-08-16 03:32:22,393 p=7170 u=root |  PLAY RECAP **************************************************************************
+2018-08-16 03:32:22,394 p=7170 u=root |  app1                       : ok=5    changed=0    unreachable=0    failed=0   
+2018-08-16 03:32:22,394 p=7170 u=root |  app2                       : ok=5    changed=0    unreachable=0    failed=0   
+2018-08-16 03:32:22,394 p=7170 u=root |  db                         : ok=5    changed=0    unreachable=0    failed=0   
+2018-08-16 03:32:22,398 p=7170 u=root |  lb                         : ok=5    changed=0    unreachable=0    failed=0   
+2018-08-18 01:29:54,969 p=7512 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-18 01:29:54,971 p=7512 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-18 01:29:55,051 p=7512 u=root |  playbook: systems.yml
+2018-08-18 01:30:16,767 p=7526 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-18 01:30:16,768 p=7526 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-18 01:30:16,846 p=7526 u=root |  playbook: systems.yml
+2018-08-18 01:30:16,848 p=7526 u=root |    play #1 (prod): base systems configuration for linux servers	TAGS: []
+    pattern: [u'prod']
+    hosts (4):
+      db
+      lb
+      app2
+      app1
+2018-08-18 01:39:29,838 p=7604 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-18 01:39:29,839 p=7604 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-18 01:39:29,849 p=7604 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/workspace/chap5/systems.yml': line 28, column 14, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - name: configuring app servers only
+        hosts: app
+             ^ here
+
+exception type: <class 'yaml.scanner.ScannerError'>
+exception: mapping values are not allowed in this context
+  in "<unicode string>", line 28, column 14
+2018-08-18 01:39:50,686 p=7615 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-18 01:39:50,687 p=7615 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-18 01:39:50,700 p=7615 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/workspace/chap5/systems.yml': line 28, column 14, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - name: configuring app servers only
+        hosts: app
+             ^ here
+
+exception type: <class 'yaml.scanner.ScannerError'>
+exception: mapping values are not allowed in this context
+  in "<unicode string>", line 28, column 14
+2018-08-18 01:43:34,002 p=7690 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-18 01:43:34,003 p=7690 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-18 01:43:34,013 p=7690 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/workspace/chap5/systems.yml': line 29, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - name: configuring app servers only
+    hosts: app
+    ^ here
+
+exception type: <class 'yaml.parser.ParserError'>
+exception: while parsing a block collection
+  in "<unicode string>", line 2, column 5
+did not find expected '-' indicator
+  in "<unicode string>", line 29, column 5
+2018-08-18 01:44:37,432 p=7722 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-18 01:44:37,433 p=7722 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-18 01:44:37,511 p=7722 u=root |  playbook: systems.yml
+2018-08-18 15:49:52,864 p=8396 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-18 15:49:52,866 p=8396 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-18 15:49:52,968 p=8396 u=root |  ERROR! 'host' is not a valid attribute for a Play
+
+The error appears to have been in '/workspace/chap5/systems.yml': line 28, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    - name: configuring app servers only
+      ^ here
+
+2018-08-18 15:50:19,783 p=8409 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-18 15:50:19,785 p=8409 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-18 15:50:19,794 p=8409 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/workspace/chap5/systems.yml': line 28, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    name: configuring app servers only
+    ^ here
+
+exception type: <class 'yaml.parser.ParserError'>
+exception: while parsing a block collection
+  in "<unicode string>", line 2, column 5
+did not find expected '-' indicator
+  in "<unicode string>", line 28, column 5
+2018-08-18 15:51:13,331 p=8441 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-18 15:51:13,333 p=8441 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-18 15:51:13,342 p=8441 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/workspace/chap5/systems.yml': line 28, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: configuring app servers only
+^ here
+
+exception type: <class 'yaml.parser.ParserError'>
+exception: did not find expected <document start>
+  in "<unicode string>", line 28, column 1
+2018-08-18 15:51:51,984 p=8480 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-18 15:51:51,986 p=8480 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-18 15:51:51,995 p=8480 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/workspace/chap5/systems.yml': line 28, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    name: configuring app servers only
+    ^ here
+
+exception type: <class 'yaml.parser.ParserError'>
+exception: while parsing a block collection
+  in "<unicode string>", line 2, column 5
+did not find expected '-' indicator
+  in "<unicode string>", line 28, column 5
+2018-08-18 15:52:28,906 p=8505 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-18 15:52:28,908 p=8505 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-18 15:52:28,916 p=8505 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/workspace/chap5/systems.yml': line 28, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+   - name: configuring app servers only
+   ^ here
+
+exception type: <class 'yaml.parser.ParserError'>
+exception: did not find expected <document start>
+  in "<unicode string>", line 28, column 4
+2018-08-18 15:52:41,176 p=8523 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-18 15:52:41,178 p=8523 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-18 15:52:41,187 p=8523 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/workspace/chap5/systems.yml': line 28, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+  - name: configuring app servers only
+  ^ here
+
+exception type: <class 'yaml.parser.ParserError'>
+exception: did not find expected <document start>
+  in "<unicode string>", line 28, column 3
+2018-08-18 15:52:50,207 p=8548 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-18 15:52:50,208 p=8548 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-18 15:52:50,217 p=8548 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/workspace/chap5/systems.yml': line 29, column 6, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+     - name: configuring app servers only
+     ^ here
+
+exception type: <class 'yaml.parser.ParserError'>
+exception: while parsing a block collection
+  in "<unicode string>", line 2, column 5
+did not find expected '-' indicator
+  in "<unicode string>", line 29, column 6
+2018-08-18 15:55:14,734 p=8609 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-18 15:55:14,736 p=8609 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-18 15:55:14,747 p=8609 u=root |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/workspace/chap5/systems.yml': line 16, column 9, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+        name=dojo
+        state=absent
+        ^ here
+
+exception type: <class 'yaml.scanner.ScannerError'>
+exception: while scanning a simple key
+  in "<unicode string>", line 15, column 9
+could not find expected ':'
+  in "<unicode string>", line 16, column 9
+2018-08-18 15:55:35,908 p=8627 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-18 15:55:35,909 p=8627 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-18 15:55:35,984 p=8627 u=root |  ERROR! 'host' is not a valid attribute for a Play
+
+The error appears to have been in '/workspace/chap5/systems.yml': line 28, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+  - name: configuring app servers only
+    ^ here
+
+2018-08-18 15:57:13,722 p=8661 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-18 15:57:13,722 p=8661 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-18 15:57:13,805 p=8661 u=root |  playbook: systems.yml
+2018-08-18 15:58:17,938 p=8700 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-18 15:58:17,939 p=8700 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-18 15:58:18,109 p=8700 u=root |  PLAY [base systems configuration for linux servers] *********************************
+2018-08-18 15:58:18,122 p=8700 u=root |  PLAY [configuring app servers only] *************************************************
+2018-08-18 15:58:18,127 p=8700 u=root |  PLAY RECAP **************************************************************************
+2018-08-18 15:58:37,949 p=8711 u=root |  ERROR! the playbook: - could not be found
+2018-08-18 15:58:41,213 p=8714 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-18 15:58:41,215 p=8714 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-18 15:58:41,384 p=8714 u=root |  PLAY [base systems configuration for linux servers] *********************************
+2018-08-18 15:58:41,395 p=8714 u=root |  TASK [Gathering Facts] **************************************************************
+2018-08-18 15:59:00,233 p=8714 u=root |  ok: [app2]
+2018-08-18 15:59:00,295 p=8714 u=root |  ok: [app1]
+2018-08-18 15:59:00,306 p=8714 u=root |  ok: [db]
+2018-08-18 15:59:00,332 p=8714 u=root |  ok: [lb]
+2018-08-18 15:59:00,339 p=8714 u=root |  TASK [create admin] *****************************************************************
+2018-08-18 15:59:02,890 p=8714 u=root |  ok: [app1]
+2018-08-18 15:59:02,900 p=8714 u=root |  ok: [db]
+2018-08-18 15:59:02,904 p=8714 u=root |  ok: [app2]
+2018-08-18 15:59:02,908 p=8714 u=root |  ok: [lb]
+2018-08-18 15:59:02,915 p=8714 u=root |  TASK [remove user dojo id present] **************************************************
+2018-08-18 15:59:03,883 p=8714 u=root |  ok: [lb]
+2018-08-18 15:59:04,036 p=8714 u=root |  ok: [app1]
+2018-08-18 15:59:04,097 p=8714 u=root |  ok: [app2]
+2018-08-18 15:59:04,101 p=8714 u=root |  ok: [db]
+2018-08-18 15:59:04,108 p=8714 u=root |  TASK [install tree] *****************************************************************
+2018-08-18 15:59:06,059 p=8714 u=root |  ok: [db]
+2018-08-18 15:59:06,063 p=8714 u=root |  ok: [lb]
+2018-08-18 15:59:06,064 p=8714 u=root |  ok: [app2]
+2018-08-18 15:59:06,070 p=8714 u=root |  ok: [app1]
+2018-08-18 15:59:06,076 p=8714 u=root |  TASK [install ntp] ******************************************************************
+2018-08-18 15:59:07,823 p=8714 u=root |  ok: [lb]
+2018-08-18 15:59:07,870 p=8714 u=root |  ok: [app1]
+2018-08-18 15:59:07,896 p=8714 u=root |  ok: [app2]
+2018-08-18 15:59:07,911 p=8714 u=root |  ok: [db]
+2018-08-18 15:59:07,917 p=8714 u=root |  PLAY [configuring app servers only] *************************************************
+2018-08-18 15:59:07,924 p=8714 u=root |  TASK [create and deploy user] *******************************************************
+2018-08-18 15:59:09,114 p=8714 u=root |  changed: [app2]
+2018-08-18 15:59:09,118 p=8714 u=root |  changed: [app1]
+2018-08-18 15:59:09,125 p=8714 u=root |  TASK [install git] ******************************************************************
+2018-08-18 15:59:16,008 p=8714 u=root |  changed: [app2]
+2018-08-18 15:59:21,989 p=8714 u=root |  changed: [app1]
+2018-08-18 15:59:21,993 p=8714 u=root |  PLAY RECAP **************************************************************************
+2018-08-18 15:59:21,994 p=8714 u=root |  app1                       : ok=7    changed=2    unreachable=0    failed=0   
+2018-08-18 15:59:21,994 p=8714 u=root |  app2                       : ok=7    changed=2    unreachable=0    failed=0   
+2018-08-18 15:59:21,994 p=8714 u=root |  db                         : ok=5    changed=0    unreachable=0    failed=0   
+2018-08-18 15:59:21,994 p=8714 u=root |  lb                         : ok=5    changed=0    unreachable=0    failed=0   
+2018-08-18 16:00:07,412 p=8937 u=root |   [WARNING]: Found both group and host with same name: db
+
+2018-08-18 16:00:07,414 p=8937 u=root |   [WARNING]: Found both group and host with same name: lb
+
+2018-08-18 16:00:28,312 p=8937 u=root |  app1 | SUCCESS | rc=0 >>
+/usr/bin/git
+
+2018-08-18 16:00:28,316 p=8937 u=root |  app2 | SUCCESS | rc=0 >>
+/usr/bin/git
+
+2018-08-18 16:12:28,716 p=8937 u=root |  app1 | SUCCESS | rc=0 >>
+uid=5002(deploy) gid=5002(deploy) groups=5002(deploy)
+
+2018-08-18 16:12:28,730 p=8937 u=root |  app2 | SUCCESS | rc=0 >>
+uid=5002(deploy) gid=5002(deploy) groups=5002(deploy)
+
