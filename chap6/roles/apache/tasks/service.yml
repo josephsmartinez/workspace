@@ -1,6 +1,6 @@
 ---
-  - name: install apache web server
-    yum:
+  - name: start https services
+    service:
       name: httpd
       state: started
      
