@@ -3,4 +3,4 @@
     hosts: lb
     become: true
     roles:
-      - { role: geerlingguy.haproxy }
+      - { role: haproxy }
