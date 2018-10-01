@@ -1,0 +1,31 @@
+---
+- name: Installing Python 3
+  hosts: all
+  become: yes
+  tasks: 
+    - name: Update
+      command: yum update -y
+
+    - name: Preparing the system
+      yum: 
+        name: "{{ packages }}"
+      vars:
+        packages: 
+          - yum-utils
+          - "@Development tools"
+          - https://centos6.iuscommunity.org/ius-release.rpm
+
+    - name: Install Python 3
+      yum: 
+        name: python36u
+    
+    - name: configure aliases
+      shell: alias python=python3.6
+      tags: alias
+        
+# Footnotes:
+# Install Python 3 on CentOS 
+# https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-centos-7
+# aliases command 
+# https://www.centoshowtos.org/commands/alias/
+

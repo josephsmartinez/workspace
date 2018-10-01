@@ -1,0 +1,6 @@
+--- 
+- name: change and configure ssh motd file
+  hosts: prod
+  become: yes
+  roles: 
+    - role: envconfig

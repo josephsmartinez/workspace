@@ -1,0 +1,4 @@
+---
+# vars file for envconfig
+motd_file: /etc/motd
+overwrite_etc_motd: yes

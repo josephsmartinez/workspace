@@ -1,0 +1,10 @@
+---
+# tasks file for envconfig
+- name: Copy motd for ssh post login messaging.
+  template:
+    src: templates/motd.j2
+    dest: "{{ motd_file }}"
+    owner: root
+    group: root
+    mode: 0644
+    force: "{{ overwrite_etc_motd }}"

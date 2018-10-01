@@ -1,0 +1,11 @@
+Simple quick and dirty adhoc command to excute on the fly
+
+# ansible prod -m setup -a "filter=ansible_fqdn gather_timeout=240"
+
+# ansible all -m yum -a "name=python state=lastest"
+
+If you have a large playbook, it may become 
+useful to be able to run only a specific part 
+of it rather than running everything in the playbook.
+
+# ansible-playbook python.yml --tags alias
